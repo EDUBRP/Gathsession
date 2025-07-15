@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins' as mix;
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 50%;
+    margin-top: 20px;
+
+    .button {
+        @include mix.button;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        color: var.$white-color;
+        font-size: small;
+
+        .Arrow {
+        margin-left: 0.5rem;
+        margin-top: 2px;
+        width: 30px;
+        }
+
+        .learn-more {
+            text-decoration: underline;
+            text-decoration-color: var.$white-color;
+        }
+    }
+
+}

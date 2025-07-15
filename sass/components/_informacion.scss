@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as var;
+
+.informacion {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  margin-top: 5rem;
+
+  .informacion-box {
+    display: flex;
+    align-items: center;
+    font-family: var.$secondary-font;
+    color: #fff;
+    min-width: 150px;
+    gap: 0.75rem;
+
+    .informacion-icon {
+      background-color: var.$grey-color; // fondo más claro del ícono
+      padding: 0.6rem;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .informacion-box__icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    p {
+      width: 30px;
+      margin: 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+  }
+}

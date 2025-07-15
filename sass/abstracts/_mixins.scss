@@ -1,0 +1,39 @@
+@use '/sass/abstracts/variables' as var;
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: var.$bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: var.$bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: var.$bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: var.$bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin button() {
+  padding: 12px 35px;
+  color: var.$white-color;
+  background-color: var.$pink-color;
+  text-decoration: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: small;
+
+}

@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as var;
+
+.principal_nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li a {
+        text-decoration: none;
+        color: var.$grey-color;
+
+        &:hover {
+            color: var.$white-color;
+            border-bottom: 2 px solid var.$primary-color;
+        }
+    }
+}
+
+.principal_nav ul li:first-child a {
+  border-bottom: 3px solid var.$pink-color; // el color rosa/rojo que se ve
+  padding-bottom: 5px; // espacio entre el texto y la línea
+}

@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as var;
+
+.hero {
+  position: relative;;
+  align-items: flex-start;
+  justify-content: space-between; // Para responsive si hace falta
+  gap: 2rem;
+
+  &__content {
+    flex: 1 1 50%;
+    max-width: 600px;
+
+    h1 {
+      font-size: 64px;
+      font-family: var.$primary-font;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: var.$white-color;
+    }
+
+    p {
+      color: var.$grey-color;
+      font-size: 21px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: -20px;
+    right: -189px;
+    z-index: 1;
+
+    .imagen-principal {
+      width: 700px;
+      max-width: 100%;
+    }
+  }
+}
