@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "./",
+  base: "/Gathsession/",
   server: {
     watch: {
       usePolling: true, // Usa polling para detectar cambios
